@@ -26,6 +26,8 @@
 - Have alternate configs for only accepting RPKI valid
 - Graceful restart function?
 - Pull prefix limits from peeringdb :O
+- Create a bash script to autogenerate the bird config based on your requirements - touch and go type setup
+##### (The last 2 will take a long time)
 ##
 ### Notable commands
 - TBA
