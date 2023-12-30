@@ -11,9 +11,9 @@
 
 ### Requirements
 - GoRTR (I used the docker image)
-- BGPQ3 or BGPQ4
-- Bird2 (obviously)
-- Crontab (or a similar program to execute a bash script task daily)
+- BGPQ3 or BGPQ4 (This generates the IRR filters)
+- Bird2 (obviously, for routing)
+- Crontab (or a similar program to execute a bash script task daily, possibly root access required)
 
 ### Notes
 - This is a slightly complicated configuration
@@ -22,15 +22,17 @@
 
 ## Future refinements
 - Have peers in better templates and separate them from the main bird.conf file
+- Better downstream templates
+- Automation of adding to the generate_irr_filters.sh file
 - Once I get a better understanding of prepending, I will make some changes to the import and export filters
 - Have alternate configs for only accepting RPKI valid
-- Graceful restart function?
+- Respect Graceful restart function?
 - Pull prefix limits from peeringdb :O
-- Create a bash script to autogenerate the bird config based on your requirements - touch and go type setup
+- Create a bash script to autogenerate the entire bird config based on your requirements - touch and go type setup
 ##### (The last 2 will take a long time)
 ##
 ### Notable commands
 - TBA
 
-#### Sources
-- Rappet (The configuration he had was for Bird1 and is no longer available)
+#### Sources & Honorable mentions
+- Rappet (The configuration he had was for Bird1 and is no longer available, however the basics of the config is from him)
